@@ -1,0 +1,29 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<sy:switchyard xmlns:camel="urn:switchyard-component-camel:config:1.1" xmlns:resteasy="urn:switchyard-component-resteasy:config:1.1" xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912" xmlns:sy="urn:switchyard-config:switchyard:1.1" name="${artifactId}" targetNamespace="urn:${groupId}:${artifactId}:1.0">
+  <sca:composite name="${artifactId}" targetNamespace="urn:${groupId}:${artifactId}:1.0">
+    <sca:component name="ProxyService">
+      <camel:implementation.camel>
+        <camel:xml path="route.xml"/>
+      </camel:implementation.camel>
+      <sca:service name="ProxyService">
+        <sca:interface.java interface="${package}.ProxyService"/>
+      </sca:service>
+      <sca:reference name="Reference">
+        <sca:interface.java interface="${package}.Reference"/>
+      </sca:reference>
+    </sca:component>
+    <sca:service name="ProxyServiceRest" promote="ProxyService/ProxyService">
+      <sca:interface.java interface="${package}.rest.ProxyServiceRest"/>
+      <resteasy:binding.rest name="rest">
+        <resteasy:interfaces>${package}.rest.ProxyServiceRest</resteasy:interfaces>
+        <resteasy:contextPath>rest-bind</resteasy:contextPath>
+      </resteasy:binding.rest>
+    </sca:service>
+    <sca:reference name="Reference" multiplicity="0..1" promote="ProxyService/Reference">
+      <sca:interface.java interface="${package}.Reference"/>
+    </sca:reference>
+  </sca:composite>
+</sy:switchyard>

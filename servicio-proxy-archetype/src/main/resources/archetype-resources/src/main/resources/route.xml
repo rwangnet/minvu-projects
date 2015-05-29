@@ -1,0 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="ASCII"?>
+<routes xmlns="http://camel.apache.org/schema/spring">
+    <route>
+        <from uri="switchyard://ProxyService"/>
+        <log message="ProxyService - message received: ${symbol_dollar}{body}"/>
+        <to uri="switchyard://Reference"/>
+    </route>
+</routes>
