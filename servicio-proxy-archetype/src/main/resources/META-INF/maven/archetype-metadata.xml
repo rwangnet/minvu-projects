@@ -50,8 +50,9 @@
     <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
-        <include>img.jpg</include>
         <include>Readme.md</include>
+        <include>img.jpg</include>
+        <include>.gitignore</include>
       </includes>
     </fileSet>
   </fileSets>
