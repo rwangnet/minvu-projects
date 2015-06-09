@@ -16,10 +16,10 @@
       <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#//@switchyard/@composite"/>
     </link>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="130" height="80" x="206" y="156">
-        <graphicsAlgorithmChildren xsi:type="al:RoundedRectangle" lineWidth="2" transparency="0.0" width="100" height="50" x="15" y="15" style="//@styles.1" cornerHeight="12" cornerWidth="12">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="151" height="80" x="206" y="156">
+        <graphicsAlgorithmChildren xsi:type="al:RoundedRectangle" lineWidth="2" transparency="0.0" width="121" height="50" x="15" y="15" style="//@styles.1" cornerHeight="12" cornerWidth="12">
           <properties key="sca-type" value="component"/>
-          <graphicsAlgorithmChildren xsi:type="al:Text" foreground="//@colors.5" lineWidth="1" filled="false" transparency="0.0" width="70" height="20" x="15" y="15" font="//@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="ProxyService"/>
+          <graphicsAlgorithmChildren xsi:type="al:Text" foreground="//@colors.5" lineWidth="1" filled="false" transparency="0.0" width="91" height="20" x="15" y="15" font="//@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="ProxyServiceRoute"/>
         </graphicsAlgorithmChildren>
       </graphicsAlgorithm>
       <link>
@@ -28,35 +28,35 @@
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <graphicsAlgorithm xsi:type="al:Image" lineWidth="1" transparency="0.0" width="20" height="20" x="5" y="25" id="org.switchyard.tools.ui.editor.service.scale" stretchH="true" stretchV="true" proportional="true"/>
         <link>
-          <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentService:ProxyService:ProxyService"/>
+          <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentService:ProxyServiceRoute:ProxyService"/>
         </link>
         <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" incomingConnections="//@connections.0" useAnchorLocationAsConnectionEndpoint="true">
           <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="10" height="20" x="-1" y="-9"/>
           <link>
-            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentService:ProxyService:ProxyService"/>
+            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentService:ProxyServiceRoute:ProxyService"/>
           </link>
           <location x="1" y="9"/>
         </anchors>
         <anchors xsi:type="pi:ChopboxAnchor">
           <link>
-            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentService:ProxyService:ProxyService"/>
+            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentService:ProxyServiceRoute:ProxyService"/>
           </link>
         </anchors>
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
-        <graphicsAlgorithm xsi:type="al:Image" lineWidth="1" transparency="0.0" width="20" height="20" x="105" y="25" id="org.switchyard.tools.ui.editor.reference.scale" stretchH="true" stretchV="true" proportional="true"/>
+        <graphicsAlgorithm xsi:type="al:Image" lineWidth="1" transparency="0.0" width="20" height="20" x="126" y="25" id="org.switchyard.tools.ui.editor.reference.scale" stretchH="true" stretchV="true" proportional="true"/>
         <link>
-          <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentReference:ProxyService:Reference"/>
+          <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentReference:ProxyServiceRoute:Reference"/>
         </link>
         <anchors xsi:type="pi:BoxRelativeAnchor" visible="true" active="true" outgoingConnections="//@connections.1" useAnchorLocationAsConnectionEndpoint="true" relativeWidth="1.0" relativeHeight="0.5">
           <graphicsAlgorithm xsi:type="al:Ellipse" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="10" height="10" x="-10" y="-5"/>
           <link>
-            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentReference:ProxyService:Reference"/>
+            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentReference:ProxyServiceRoute:Reference"/>
           </link>
         </anchors>
         <anchors xsi:type="pi:ChopboxAnchor">
           <link>
-            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentReference:ProxyService:Reference"/>
+            <businessObjects href="../../../../../src/main/resources/META-INF/switchyard.xml#ComponentReference:ProxyServiceRoute:Reference"/>
           </link>
         </anchors>
       </children>
@@ -91,7 +91,7 @@
       </anchors>
     </children>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="100" height="50" x="450" y="131">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="100" height="50" x="450" y="111">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineWidth="2" filled="true" transparency="0.0" width="100" height="50" style="//@styles.3">
           <properties key="sca-type" value="composite-reference"/>
           <graphicsAlgorithmChildren xsi:type="al:Text" foreground="//@colors.10" lineWidth="1" filled="false" transparency="0.0" width="75" height="50" x="20" font="//@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="Reference"/>

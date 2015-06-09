@@ -35,16 +35,16 @@ public interface ProxyServiceRest {
 	@GET
     @Path("/getObject/{objectid}")
 	@Produces(MediaType.APPLICATION_JSON)
-    public Object getObject(@PathParam("objectid") Integer objectid);
+    public Object getOperation(@PathParam("objectid") Integer objectid);
 	
 	@PUT
     @Path("/updateObject")
 	@Consumes(MediaType.APPLICATION_JSON)
-    public boolean updateObject(Object object);
+    public boolean updateOperation(Object object);
 
     @DELETE
     @Path("{objectid}")
-    public boolean removeObject(@PathParam("objectid") String objectid);
+    public boolean removeOperation(@PathParam("objectid") String objectid);
 	
 	
 }
