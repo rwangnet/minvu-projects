@@ -13,11 +13,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-
-
 /**
- * @author rwangnet 
- * Interfaz Dummy para Acceso REST con métodos básicos tipo CRUD para mayor información
+ * Interfaz Dummy para Acceso REST con métodos básicos tipo CRUD para mayor
+ * información. Se requiere posteriormente una implementación específica de la
+ * interfaz de la referencia destino asociados a estos métodos dummy.
  */
 
 @Path("")
@@ -30,18 +29,17 @@ public interface ProxyServiceRest {
 	public Object createOperation();
 
 	@GET
-    @Path("/getObject/{objectid}")
+	@Path("/getObject/{objectid}")
 	@Produces(MediaType.APPLICATION_JSON)
-    public Object getOperation(@PathParam("objectid") Integer objectid);
-	
-	@PUT
-    @Path("/updateObject")
-	@Consumes(MediaType.APPLICATION_JSON)
-    public boolean updateOperation(Object object);
+	public Object getOperation(@PathParam("objectid") Integer objectid);
 
-    @DELETE
-    @Path("{objectid}")
-    public boolean removeOperation(@PathParam("objectid") String objectid);
-	
-	
+	@PUT
+	@Path("/updateObject")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public boolean updateOperation(Object object);
+
+	@DELETE
+	@Path("/{objectid}")
+	public boolean removeOperation(@PathParam("objectid") String objectid);
+
 }

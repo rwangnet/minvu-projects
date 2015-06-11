@@ -4,8 +4,7 @@
 package cl.minvu.servicio.proxy;
 
 /**
- * @author rwangnet
- * 
+ * Interfaz que define los métodos Dummy del componente referencial a exponer
  */
 public interface ProxyService {
 	public Object createOperation();
