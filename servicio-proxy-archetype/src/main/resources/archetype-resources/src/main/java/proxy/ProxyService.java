@@ -1,7 +1,10 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
 /**
  * 
  */
-package cl.minvu.servicio.proxy;
+package ${package}.proxy;
 
 /**
  * Interfaz que define los métodos Dummy de la interfaz expuesta via REST
