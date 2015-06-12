@@ -7,8 +7,7 @@
 package ${package};
 
 /**
- * @author rwangnet
- * 
+ * Interfaz que define los métodos Dummy de la interfaz expuesta via REST
  */
 public interface ProxyService {
 	public Object createOperation();
