@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cl.minvu</groupId>
+  <artifactId>ejemplo-integracion-servicios</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>ejemplo-integracion-servicios</name>
+  <description>Proyecto de ejemplo que permite ilustrar la relación entre los servicios de tipo dominio y negocio respectivamente.</description>
+  <modules>
+    <module>servicio-negocio-ejemplo</module>
+    <module>servicio-dominio-ejemplo</module>
+  </modules>
+</project>

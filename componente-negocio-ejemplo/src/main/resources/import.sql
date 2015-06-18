@@ -1,0 +1,2 @@
+-- SQL Statemets which are executed at application startup if hibernate.hbm2ddl.auto is 'create' or 'create-drop'
+INSERT INTO PERSONAS (ID, NOMBRE_PERSONA, APELLIDOS_PERSONA, EDAD) VALUES (1, 'Juan', 'Perez Vidal', 28);

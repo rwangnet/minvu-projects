@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sy:switchyard xmlns:camel="urn:switchyard-component-camel:config:1.1" xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912" xmlns:sql="urn:switchyard-component-camel-sql:config:1.1" xmlns:sy="urn:switchyard-config:switchyard:1.1" name="servicio-negocio-ejemplo" targetNamespace="urn:cl.minvu:servicio-negocio-ejemplo:1.0">
+  <sca:composite name="servicio-negocio-ejemplo" targetNamespace="urn:cl.minvu:servicio-negocio-ejemplo:1.0">
+    <sca:component name="Route">
+      <camel:implementation.camel>
+        <camel:xml path="route.xml"/>
+      </camel:implementation.camel>
+      <sca:service name="PersonaServiceInterface">
+        <sca:interface.java interface="org.servicio.negocio.ejemplo.PersonaServiceInterface"/>
+      </sca:service>
+      <sca:reference name="PersonaServiceInterfaceReference">
+        <sca:interface.java interface="org.servicio.negocio.ejemplo.PersonaServiceInterface"/>
+      </sca:reference>
+    </sca:component>
+    <sca:service name="PersonaServiceInterface" promote="Route/PersonaServiceInterface">
+      <sca:interface.java interface="org.servicio.negocio.ejemplo.PersonaServiceInterface"/>
+      <sca:binding.sca name="scaPersonaService"/>
+    </sca:service>
+    <sca:reference name="PersonaServiceInterfaceReference" multiplicity="0..1" promote="Route/PersonaServiceInterfaceReference">
+      <sca:interface.java interface="org.servicio.negocio.ejemplo.PersonaServiceInterface"/>
+      <sql:binding.sql name="sqlDatosPersona">
+        <sql:query>SELECT * FROM Persona</sql:query>
+        <sql:dataSourceRef>java:jboss/miDataSource</sql:dataSourceRef>
+      </sql:binding.sql>
+    </sca:reference>
+  </sca:composite>
+</sy:switchyard>
