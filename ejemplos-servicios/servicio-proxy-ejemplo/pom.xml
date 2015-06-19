@@ -5,7 +5,7 @@
   <groupId>com.example.switchyard</groupId>
   <artifactId>servicio-proxy-ejemplo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>com.example.switchyard:servicio-proxy-ejemplo</name>
+  <name>servicio-proxy-ejemplo</name>
   <properties>
     <switchyard.version>1.1.1-p5-redhat-1</switchyard.version>
   </properties>
@@ -90,4 +90,5 @@
       </plugin>
     </plugins>
   </build>
+  <description>Ejemplo basado en arquetipo de servicio-proxy que expone a través de una interfaz REST un servicio específico que además puede consumir una referencia de un servicio de dominio/negocio a través de la exposición via un SCA Binding.</description>
 </project>

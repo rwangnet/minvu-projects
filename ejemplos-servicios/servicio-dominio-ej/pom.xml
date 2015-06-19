@@ -6,7 +6,7 @@
 	<groupId>cl.minvu.servicio.dominio</groupId>
 	<artifactId>servicio-dominio-ej</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cl.minvu.servicio.dominio:servicio-dominio-ej</name>
+	<name>servicio-dominio-ejemplo</name>
 	<properties>
 		<switchyard.version>1.1.1-p5-redhat-1</switchyard.version>
 	</properties>
@@ -86,4 +86,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	<description>Proyecto de ejemplo con estructura base de un servicio de tipo Dominio, el cuál permite exponer información obtenida de otros servicios de negocio y/o realizar orquestación de servicios.</description>
 </project>
