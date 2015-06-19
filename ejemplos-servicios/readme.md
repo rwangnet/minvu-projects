@@ -7,7 +7,7 @@ EN el presente directorio se proveen de ejemplosde los 3 tipos definidios de ser
 
 Instrucciones de Despliegue
 ----------------------------
-Puede generar los artefactos a desplegar a través del comando mvn-install los cuáles estarán en el repositorio local o en 
+Puede generar los artefactos a desplegar en Fuse Service Works a través del comando mvn-install los cuáles estarán en el repositorio local o en 
 el directorio target de cada uno de los proyectos específicos.
 Podrá con esto, observar la integración de los tipos de servicios definidos, a partir del acceso via rest al servicio proxy
 que consumira otro tipo de servicio de dominio, y este a su vez, de negocio respectivamente.
