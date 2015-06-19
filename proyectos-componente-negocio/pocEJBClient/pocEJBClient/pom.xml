@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cl.minvu</groupId>
+  <artifactId>pocEJBClient</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  <dependency>
+            <groupId>cl.minvu</groupId>
+            <artifactId>PersonaControllerInterfaces</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+  	    <dependency>
+  	    	<groupId>org.jboss</groupId>
+  	    	<artifactId>jboss-ejb-client</artifactId>
+  	    	<version>1.0.31.Final-redhat-1</version>
+  	    </dependency>
+  </dependencies>
+  <name>pocEJBClient</name>
+  <description>Proyecto base de cliente ejb para un componente de negocio expuesto a través de una interfaz remota.</description>
+</project>
