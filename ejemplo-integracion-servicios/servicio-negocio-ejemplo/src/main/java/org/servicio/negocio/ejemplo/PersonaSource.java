@@ -4,5 +4,5 @@ import cl.minvu.TO.PersonaTO;
 
 public interface PersonaSource {
 
-	public PersonaTO obtiene(PersonaTO persona);
+	public PersonaTO obtiene(Integer idPersona);
 }

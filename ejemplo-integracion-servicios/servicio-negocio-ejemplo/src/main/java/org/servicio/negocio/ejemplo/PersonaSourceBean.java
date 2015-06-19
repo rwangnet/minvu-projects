@@ -1,11 +1,11 @@
 package org.servicio.negocio.ejemplo;
 
 import java.util.HashMap;
-import java.util.Map.Entry;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.switchyard.component.bean.Service;
+
 import cl.minvu.TO.PersonaTO;
 
 @Service(PersonaSource.class)
@@ -20,18 +20,11 @@ public class PersonaSourceBean implements PersonaSource {
 		map.put(3, new PersonaTO(3, "Juan", "Pérez Doe", 55));
 	}
 
-	public PersonaTO obtiene(PersonaTO persona) {
+	public PersonaTO obtiene(Integer idPersona) {
 		LOG.info("INFO: Evaluando si existe persona consultada....");
-		for (Entry<Integer, PersonaTO> entry : map.entrySet()) {
-			if (persona.getId() == entry.getKey()) {
-				LOG.info("INFO: Persona encontrada...");
-				// persona = entry.getValue();
-				return entry.getValue();
-			}
-			return entry.getValue();
-		}
-		LOG.info("INFO: La persona buscada no existe...");
-		return null;
+		PersonaTO persona = map.get(idPersona);
+		LOG.info("INFO: "+(persona!=null?"Persona encontrada!":"La persona buscada no existe...") );
+		return persona;
 
 	}
 

@@ -27,7 +27,7 @@ import cl.minvu.TO.PersonaTO;
 public final class RemoteClient {
 
 	private static final QName SERVICE = new QName(
-			"urn:cl.minvu:servicio-dominio-ejemplo:1.0", "DummyService");
+			"urn:cl.minvu.servicio.dominio:servicio-dominio-ej:1.0", "DummyService");
 	private static final String URL = "http://localhost:8080/switchyard-remote";
 
 	private RemoteClient() {
