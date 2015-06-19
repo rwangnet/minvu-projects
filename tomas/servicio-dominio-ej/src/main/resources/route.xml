@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<routes xmlns="http://camel.apache.org/schema/spring">
+  <route>
+    <from uri="switchyard://DummyService"/>
+    <log message="Servicio Dominio - ID : ${body}"/>
+    <to uri="switchyard://PersonaServiceInterface?operationName=obtiene"/>
+  </route>
+</routes>
