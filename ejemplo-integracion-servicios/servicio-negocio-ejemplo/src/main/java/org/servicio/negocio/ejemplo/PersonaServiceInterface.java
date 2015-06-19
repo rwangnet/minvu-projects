@@ -1,9 +1,9 @@
 package org.servicio.negocio.ejemplo;
 
-import org.servicio.negocio.ejemplo.TO.PersonaTO;
+import cl.minvu.TO.PersonaTO;
 
 public interface PersonaServiceInterface {
 
 	public PersonaTO obtiene(PersonaTO persona);
-	
+
 }

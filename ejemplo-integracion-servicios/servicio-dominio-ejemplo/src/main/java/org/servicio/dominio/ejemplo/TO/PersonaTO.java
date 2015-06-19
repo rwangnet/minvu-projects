@@ -1,10 +1,33 @@
 package org.servicio.dominio.ejemplo.TO;
 
-public class PersonaTO {
+import java.io.Serializable;
+
+public class PersonaTO implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Integer id;
 	private String nombre;
-	private String apaterno;
-	private String amaterno;
-	private int edad;
+	private String apellidos;
+	private Integer edad;
+
+	public PersonaTO(Integer id, String nombre, String apellidos, Integer edad) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -14,27 +37,19 @@ public class PersonaTO {
 		this.nombre = nombre;
 	}
 
-	public String getApaterno() {
-		return apaterno;
+	public String getApellidos() {
+		return apellidos;
 	}
 
-	public void setApaterno(String apaterno) {
-		this.apaterno = apaterno;
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
 	}
 
-	public String getAmaterno() {
-		return amaterno;
-	}
-
-	public void setAmaterno(String amaterno) {
-		this.amaterno = amaterno;
-	}
-
-	public int getEdad() {
+	public Integer getEdad() {
 		return edad;
 	}
 
-	public void setEdad(int edad) {
+	public void setEdad(Integer edad) {
 		this.edad = edad;
 	}
 

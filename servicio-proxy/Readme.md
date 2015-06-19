@@ -8,15 +8,15 @@ Estructura del Proyecto:
 
 XML Relevantes:
 ---------------
- - Switchyard.xml
- - route.xml
+- Switchyard.xml
+- route.xml
  
- Interfaces:
+Interfaces:
  -----------
- REST - ProxyServiceRest
- ProxyService (impl Camel)
- Reference (Dummy componente referenciado)
+- REST - ProxyServiceRest
+- ProxyService (impl Camel)
+- Reference (Dummy componente referenciado)
  
- Objetivos:
- ----------
- Permitir dar base a una implementación sujeta a la descripción anteriormente mencionada.
+Objetivos:
+----------
+Permitir dar base a una implementación sujeta a la descripción anteriormente mencionada.

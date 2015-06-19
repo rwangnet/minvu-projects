@@ -1,0 +1,12 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+	 <deployment>
+	 <module-alias name="util"/>
+		 <dependencies>
+		 	<module name="deployment.util-0.0.1-SNAPSHOT.jar" optional="false"/>
+		 </dependencies>
+		 
+		 <exclusions>
+<!-- 		 	<module name="org.apache.santuario.xmlsec" slot="main"/> -->
+		 </exclusions>
+	 </deployment>	 
+</jboss-deployment-structure>

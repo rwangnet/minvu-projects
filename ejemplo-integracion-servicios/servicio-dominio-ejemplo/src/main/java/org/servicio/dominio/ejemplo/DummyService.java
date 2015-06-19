@@ -1,7 +1,7 @@
 package org.servicio.dominio.ejemplo;
 
-import org.servicio.dominio.ejemplo.TO.PersonaTO;
+import cl.minvu.TO.PersonaTO;
 
 public interface DummyService {
-	public void dummyMethod(PersonaTO persona);
+	public PersonaTO dummyMethod(PersonaTO persona);
 }

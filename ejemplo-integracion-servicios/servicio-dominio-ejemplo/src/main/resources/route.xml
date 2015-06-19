@@ -2,6 +2,7 @@
 <routes xmlns="http://camel.apache.org/schema/spring">
     <route>
         <from uri="switchyard://DummyService"/>
-        <to uri="switchyard://DummyServiceRef"/>
+        <log message="DummyService - message received: ${body}"/>
+        <to uri="switchyard://PersonaServiceInterface"/>
     </route>
 </routes>

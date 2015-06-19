@@ -11,5 +11,6 @@
     <module>servicio-negocio-ejemplo</module>
     <module>servicio-dominio-ejemplo</module>
     <module>cliente-servicio-sca</module>
+    <module>util</module>
   </modules>
 </project>
